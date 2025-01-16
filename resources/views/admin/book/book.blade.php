@@ -124,7 +124,7 @@
                     dataType: 'json',
                     success: function(data) {
 
-                        //console.log(data.price);                                                                                                                                        
+                        //console.log(data.price);
                         $('#price').val(data.price);
 
                     },
@@ -135,7 +135,7 @@
             })
 
             $('#date_of_use').on('change', function() {
- 
+
                 var selectedDate = $(this).val();
                 var selectedSport = $('#sport').val();
 
@@ -148,7 +148,7 @@
                             sport: selectedSport
                         },
                         success: function(data) {
-                            
+
                             $('#field').empty();
                             if (data.length > 0) {
                                 console.log('Ready')
